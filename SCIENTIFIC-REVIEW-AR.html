@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سيلين — ردّ على المراجعة العلمية</title>
+<style>
+  :root{
+    --bg:#0b0e14; --card:#111621; --card2:#151b28; --line:#232c3d;
+    --ink:#e8edf7; --dim:#9aa8bf; --accent:#b9a4ff; --sun:#f4c86a;
+    --ok:#63d6a2; --warn:#f0b45f; --bad:#ff8a8a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI","Noto Naskh Arabic",Tahoma,Arial,sans-serif;
+    font-size:15px; line-height:1.85;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:40px 24px 72px}
+  header{border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom:28px}
+  .eyebrow{font-size:13px; letter-spacing:.14em; color:var(--accent); margin:0 0 10px}
+  h1{font-size:30px; line-height:1.35; margin:0 0 10px}
+  .lede{color:var(--dim); margin:0; font-size:15px}
+  h2{font-size:21px; margin:38px 0 12px; padding-inline-start:14px; border-inline-start:3px solid var(--accent)}
+  h3{font-size:17px; margin:24px 0 8px; color:var(--accent)}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0; padding-inline-start:22px}
+  li{margin:6px 0}
+  .num,table,.kpi{font-variant-numeric:tabular-nums}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin:16px 0}
+  .kpi{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px}
+  .kpi .k{font-size:13px; color:var(--dim); margin:0 0 4px}
+  .kpi .v{font-size:22px; margin:0; font-weight:600}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:start; vertical-align:top}
+  th{background:var(--card2); color:var(--dim); font-weight:600; font-size:13px}
+  tbody tr:nth-child(even){background:#0f141d}
+  .pass{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)}
+  code{background:#0e131c; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:13px; direction:ltr; display:inline-block}
+  .box{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:16px 0}
+  .box.accent{border-color:#3a3163; background:#151129}
+  .box.warnbox{border-color:#4a3a22; background:#1a1409}
+  .tag{display:inline-block; font-size:12.5px; padding:2px 9px; border-radius:999px; border:1px solid var(--line); color:var(--dim); margin-inline-end:6px}
+  .tag.fix{color:var(--ok); border-color:#255f45}
+  .tag.new{color:var(--accent); border-color:#3a3163}
+  footer{margin-top:44px; border-top:1px solid var(--line); padding-top:18px; color:var(--dim); font-size:13.5px}
+  .foot-note{font-size:13.5px; color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">سيلين · مُخطِّط مهام القطب الجنوبي للقمر — نسخة 2.1.0</p>
+  <h1>ردّ على المراجعة العلمية: أربع نقاط، وما تغيّر فعلاً</h1>
+  <p class="lede">
+    هذه ليست قائمة وعود. كل بند أدناه إمّا قياس أُجري في المستودع، أو تصحيح دخل على الشيفرة والتوثيق،
+    أو اختبار جديد صار يحرس الرقم. الأرقام المذكورة هنا هي مخرجات السكربتات نفسها، لا أرقام مكتوبة بخط اليد.
+  </p>
+</header>
+
+<div class="grid">
+  <div class="kpi"><p class="k">اختبارات الوحدة</p><p class="v pass">230 / 230</p></div>
+  <div class="kpi"><p class="k">اختبارات المتصفح الحقيقية</p><p class="v pass">19 / 19</p></div>
+  <div class="kpi"><p class="k">فحص القصّ (8 عروض)</p><p class="v pass">نظيف</p></div>
+  <div class="kpi"><p class="k">حجم الحزمة</p><p class="v">3.7 م.ب</p></div>
+</div>
+
+<h2>1 · مراجعة الحسابات مقابل مراجع موثوقة</h2>
+
+<p>
+  أُعيد فتح كل رقم في جدول «البيانات والتحقّق» مقابل المصدر الأصلي. ثلاثة أرقام كانت منسوبة إلى المرجع الخطأ،
+  وصُحّحت. لم يُحرَّك أي رقم من أرقام النموذج نفسه: التصحيح مسّ <em>ما نقارن به</em>، لا ما نحسبه.
+</p>
+
+<table>
+  <thead>
+    <tr><th>البند</th><th>كان</th><th>صار</th><th>لماذا</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>إضاءة الحيد الواصل (Connecting Ridge)</td>
+      <td class="bad">86.7٪ «عند السطح، ونحو 89٪ على مترين» (Mazarico 2011)</td>
+      <td class="pass">89.0٪ عند السطح، 92.7٪ على مترين</td>
+      <td>
+        جدول Gläser وزملائه (2017) يعرض المقارنة صفًّا بصف: عند الإحداثيات نفسها (89.45°ج، 222.69°ش)
+        يعطي Mazarico <strong>89.0</strong> عند السطح و<strong>92.7</strong> على مترين.
+        أما 86.7٪ فهي قيمة <em>حافة شاكلتون</em> في الجدول نفسه. الرقمان كانا قد انزلقا صفًّا واحدًا.
+      </td>
+    </tr>
+    <tr>
+      <td>إضاءة حافة دي جيرلاش</td>
+      <td class="warn">82٪ منسوبة إلى Gläser</td>
+      <td class="pass">85٪ (Point C، Bussey وزملاؤه)</td>
+      <td>
+        القيمة المنشورة للنقطة C (88.71°ج، 68.7°غ) هي 85٪ سنويًّا عند السطح. أُضيف المرجع الصحيح
+        <code>bussey2010</code> إلى قائمة المصادر.
+      </td>
+    </tr>
+    <tr>
+      <td>إضاءة مالابير (Malapert M1)</td>
+      <td class="warn">74٪ منسوبة إلى Gläser وLROC</td>
+      <td class="pass">74٪ منسوبة إلى Bussey (M1 عند 86.04°ج، 2.7°ش)</td>
+      <td>الرقم صحيح، والنسبة كانت خطأ. النموذج يعطي 61.5٪ والفرق مبرَّر هندسيًّا في الصف نفسه.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="box warnbox">
+  <p><strong>والنتيجة أن الفجوة صارت أصغر مما كانت تُوصف، لا أكبر.</strong>
+  صار الفرق بين نموذجنا وMazarico نحو <span class="num">9</span> نقاط مئوية (98.4 مقابل 89.0)، لا 12.
+  لكن المرجعين المنشورين نفسيهما يختلفان عن بعضهما بـ<span class="num">13</span> نقطة عند الإحداثيات ذاتها:
+  Gläser (نموذج رقمي بدقة 20 م) يعطي 76.0٪ عند السطح و81.3٪ على مترين. لذلك الفجوة عندنا
+  (~22 نقطة مقابل أدقّ مرجع) أكبر من فجوة المرجعين بينهما. لا نحاول تصغير ذلك:
+  <strong>98.4٪ حدٌّ أعلى، والسبب تشويه التضاريس المضمّنة.</strong>
+  ونصّ المقارنة في صفحة Compare والوثائق صار يذكر المرجعين معًا بصراحة.
+  </p>
+</div>
+
+<h3>ما تحقّق منه المراجعة ولم يتغيّر</h3>
+<ul>
+  <li>نصف قطر القمر المرجعي <span class="num">1737.4</span> كم، ونصف قطر التضاريس <span class="num">1737.4</span> كم — متسقان في كل الوحدات.</li>
+  <li>ميل محور القمر <span class="num">1.54°</span> (IAU)، والنموذج يعطي أقصى ارتفاع للشمس <span class="num">1.59°</span> — فرق <span class="num">0.04°</span> داخل حدّ أخذ العيّنات.</li>
+  <li>تأرجح ارتفاع الأرض <span class="num">−6.7° … +6.9°</span> مقابل <span class="num">±6.5°</span> في Kaguya، ونسبة الوقت فوق الحدّ <span class="num">50.0٪</span> مقابل «نصف الشهر القمري» في NASA.</li>
+  <li>قطر قرص الأرض من القمر <span class="num">3.7×</span> قطر قرص الشمس — مطابق للنطاق المنشور 1.8–2.05° مقابل 0.49–0.56°.</li>
+  <li>الجدول كله: <span class="num">12/12</span> داخل النطاق المنشور، منها <span class="num">7</span> تستشهد بقيمة منشورة و<span class="num">5</span> «نطاق مشتق» مُعلَن كذلك.</li>
+</ul>
+
+<p class="foot-note">
+  ملاحظة على المنهج: لم أُضِف أي «تحقّق» جديد بلا مصدر. البندان الوحيدان اللذان بلا رقم منشور (نوبيلي، كابيوس)
+  يبقيان «نطاقًا مشتقًّا» ومكتوبًا عليه ذلك في الواجهة.
+</p>
+
+<h2>2 · التناقضات بين البيانات والواجهة والتوثيق والاختبارات</h2>
+
+<p>ستة تناقضات، كلها كانت حقيقية، وكلها أُغلقت:</p>
+
+<table>
+  <thead><tr><th>#</th><th>التناقض</th><th>الحالة</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="num">1</td>
+      <td>
+        <strong>كمّية سنوية واحدة، بطريقتين.</strong> سكربت تدقيق الأفق كان يحسب إضاءة السنة بنسخته
+        الخاصة من هندسة الشمس والقمر (0.266° نصف قطر ثابت)، فكان يطبع 98.6٪ للحيد الواصل،
+        بينما جدول التحقّق — الرقم الذي يراه المستخدم — يقول 98.4٪.
+      </td>
+      <td><span class="tag fix">أُصلح</span> السكربت صار يستدعي <code>skyState()</code> الخاص بالتطبيق بمصفوفة أفق بديلة.
+        الفرق بين التدقيق والشاشة صار صفرًا، ويحرسه اختبار يقارن الرقمين مباشرة.</td>
+    </tr>
+    <tr>
+      <td class="num">2</td>
+      <td>رقم 86.7٪ في جدول التوثيق ونصوص Compare الثلاثة (EN/FR/AR) بعد تصحيح المصدر (البند 1).</td>
+      <td><span class="tag fix">أُصلح</span> في <code>README.md</code> و<code>SOURCES-AND-LIMITS.md</code>
+        و<code>COMPLIANCE.md</code> و<code>DESIGN-NOTES.md</code> والسلاسل الثلاث، مع ذكر المرجعين.</td>
+    </tr>
+    <tr>
+      <td class="num">3</td>
+      <td>
+        <strong>«الترتيب ذو معنى» مقابل واقع مقيس.</strong> نصّ صفحة Compare كان يقول إن الترتيب
+        ذو معنى، بينما في نافذة 30 يومًا يعطي شاكلتون 98.60٪ ودي جيرلاش 98.62٪ — أي تعادل مقروء
+        على الشاشة، والفارق الحقيقي في الترتيب يأتي من الدرجة لا من نسبة الشمس.
+      </td>
+      <td><span class="tag fix">أُصلح</span> صفّ جديد في مفتاح الجدول (<code>compareTies</code>، بالثلاث لغات)
+        يقول إن المواقع قد تتعادل، وإن المرتبة تتبع الدرجة بفارق أعشار النقطة. اختبار يثبّت الحالة.</td>
+    </tr>
+    <tr>
+      <td class="num">4</td>
+      <td>جملة عربية/إنجليزية ظهرت على الشاشة بذيل ترقيم مكسور: «…the robust part.,» بسبب تحرير نصّي آلي.</td>
+      <td><span class="tag fix">أُصلح</span> + اختبار جديد يمنع أي سلسلة واجهة تنتهي بترقيم مزدوج أو بفاصلة.</td>
+    </tr>
+    <tr>
+      <td class="num">5</td>
+      <td>عدّ الاختبارات في التوثيق: «192» و«201+» و«71» في ثلاثة ملفات، والواقع 217 ثم 230.</td>
+      <td><span class="tag fix">أُصلح</span> في <code>README.md</code> و<code>DESIGN-NOTES.md</code>.</td>
+    </tr>
+    <tr>
+      <td class="num">6</td>
+      <td>
+        <strong>طبقة الأفق كانت غير قابلة للتكذيب.</strong> مصفوفات الأفق (720 خانة سمتية لكل موقع)
+        بُنيت خارج المستودع من نموذج رقمي غير مضمّن، فلم يكن في الشيفرة ما يتحقّق منها.
+      </td>
+      <td><span class="tag new">جديد</span> <code>scripts/horizon-audit.mjs</code> يعيد بناء كل مصفوفة
+        من الشبكة المضمّنة نفسها بالدالة المضمّنة نفسها. التفصيل في البند 3.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3 · أثر دقّة التضاريس على نتائج المواقع</h2>
+
+<p>
+  أُعيد بناء أفق كل موقع من شبكة الغطاء المضمّنة (400 م) بالدالة المضمّنة، ثم عند 800 م و1600 م،
+  لسنة كاملة بخطوة 6 ساعات و720 خانة سمتية. ثم أُجري بحث موضعي: إلى أي حدّ يكفي تحريك الموقع
+  ليُستنسخ الأفق المشحون؟
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>الموقع</th><th>المشحون<br>(سنوي، أي جزء)</th><th>معاد حسابه<br>400 م</th><th>الفرق</th>
+      <th>تأثير حجم الخلية<br>400→1600 م</th><th>يُستنسخ بإزاحة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>حافة شاكلتون</td><td class="num">82.9٪</td><td class="num">30.6٪</td><td class="bad num">+52.3 ن.م</td><td class="num">3.9 ن.م</td><td class="num">0.45 كم (تبقّي 0.16°)</td></tr>
+    <tr><td>الحيد الواصل</td><td class="num">98.4٪</td><td class="num">78.0٪</td><td class="bad num">+20.5 ن.م</td><td class="num">12.1 ن.م</td><td class="num">0.87 كم (0.46°)</td></tr>
+    <tr><td>حافة دي جيرلاش</td><td class="num">83.0٪</td><td class="num">75.7٪</td><td class="warn num">+7.3 ن.م</td><td class="num">8.8 ن.م</td><td class="num">1.03 كم (0.47°)</td></tr>
+    <tr><td>كتلة مالابير</td><td class="num">61.5٪</td><td class="num">40.4٪</td><td class="bad num">+21.1 ن.م</td><td class="bad num">15.9 ن.م</td><td class="num">12.4 كم (1.66°)</td></tr>
+    <tr><td>حافة نوبيلي 1</td><td class="num">38.1٪</td><td class="num">38.2٪</td><td class="pass num">−0.1 ن.م</td><td class="num">0.5 ن.م</td><td class="num">0 كم (0.04°)</td></tr>
+    <tr><td>كابيوس ب</td><td class="num">39.8٪</td><td class="num">38.9٪</td><td class="pass num">+0.9 ن.م</td><td class="num">1.0 ن.م</td><td class="num">0 كم (1.16°)</td></tr>
+  </tbody>
+</table>
+
+<h3>ما تقوله هذه الأرقام فعلاً</h3>
+<ol>
+  <li>
+    <strong>المصفوفات المشحونة ليست قابلة للاستنساخ من النموذج المشحون — لكن الاختلاف موضعي لا خوارزمي.</strong>
+    إزاحة أقل من كيلومتر واحد تُنزل فرق الأفق عند شاكلتون من 5.1° إلى 0.16°، وعند الحيد الواصل من 1.16° إلى 0.46°.
+    ولأن نوبيلي وكابيوس — حيث يهيمن تضريس واسع النطاق — يتطابقان أصلًا عند 0.04° بلا أي إزاحة،
+    فالاستنتاج: الشيفرة الهندسية صحيحة، والذي يختلف هو <em>الإحداثي</em> الذي استُخدم في البناء الخارجي.
+  </li>
+  <li>
+    <strong>دقّة التضاريس ليست الخطأ المهيمن.</strong> تغيير حجم الخلية من 400 م إلى 1600 م يحرّك الإضاءة
+    السنوية بين 0.5 و15.9 نقطة. تحريك الموقع أقل من كيلومتر يحرّكها حتى 52 نقطة. أي أن
+    عدم اليقين في <em>التموضع</em> أكبر بمرتبة من عدم اليقين في <em>الدقة</em> عند المواقع الحسّاسة.
+  </li>
+  <li>
+    <strong>«دقة أعلى = أفضل» غير صحيح هنا، ولذلك لا نقوله.</strong> الشبكات 400/800/1600 م لا تتداخل
+    تراتبيًّا لكل موقع (خلية أخشن قد ترفع حرفًا بدل أن تُنعّمه)، فلا يجوز الادّعاء بأن الأدقّ أقرب دائمًا.
+  </li>
+  <li>
+    <strong>الحيد الواصل تحديدًا:</strong> الرقم 98.4٪ هو حدّ أعلى بسبب تنعيم التضاريس (240 م كمتوسط
+    كتلي للنموذج 80 م)، والتدقيق يضيف أن <em>جواره</em> حسّاس كحدّ السكين: داخل 0.87 كم تتحرّك
+    القيمة السنوية بعشرات النقاط. لذلك صار يُقرأ كنطاق لا كتنبؤ، والمتين فيه هو
+    <strong>ترتيب المواقع</strong> فقط. هذا النصّ أصبح ظاهرًا تحت جدول التحقّق بالعربية والفرنسية والإنجليزية
+    (<code>valHorizonBand</code>).
+  </li>
+</ol>
+
+<div class="box">
+  <p><strong>ما لا يستطيعه هذا التدقيق، ويجب قوله:</strong> لا يمكن الحكم أيّ الأفقين «أصحّ» — المشحون
+  أو المعاد حسابه — دون النموذج الرقمي الأصلي بدقة 80 م ومولّد المصفوفات الخارجي. التدقيق يثبت
+  الاتساق الداخلي وحجم الحساسية، لا الصحة المطلقة. ومن هنا جاءت صياغة الواجهة: نطاق، لا تنبؤ.</p>
+</div>
+
+<h2>4 · اختبارات إضافية: هل تتغيّر النتائج مع الموقع والتاريخ؟</h2>
+
+<p>أُضيفت ثلاث مجموعات، 13 اختبارًا، والعدد الكلي صار <span class="num">230</span>:</p>
+
+<h3><code>tests/horizon-audit.test.js</code> — 7 اختبارات <span class="tag new">جديد</span></h3>
+<ul>
+  <li>ملف القياس مُنتَج بالسكربت المشحون، ويغطّي المواقع الستة والشبكات الثلاث.</li>
+  <li><strong>ضابط:</strong> نوبيلي يتطابق عند 0.1° — لو كسر أحدٌ اصطلاح السماء أو إشارة المسح، يسقط هذا الاختبار.</li>
+  <li>المواقع الحسّاسة تبقى متباعدة بأكثر من 15 نقطة، وأن الإزاحة تُفسّر جزءًا من الفرق.</li>
+  <li>مالابير هو الاستثناء: يحتاج 12 كم، فلا يجوز وصفه بـ«حدّ السكين».</li>
+  <li>حجم الخلية وحده يحرّك الجواب حتى 16 نقطة، ونوبيلي/كابيوس حسّاسان بأقل من 2.</li>
+  <li>الرقم المشحون في ملف القياس = الرقم المعروض في جدول التحقّق (حماية من الانزلاق مرة أخرى).</li>
+  <li>نصّ النطاق موجود بالثلاث لغات، ومُرسَم فعلاً في صفحة التحقّق لا مخزَّنًا فقط.</li>
+</ul>
+
+<h3><code>tests/sensitivity.test.js</code> — 5 اختبارات <span class="tag new">جديد</span></h3>
+<ul>
+  <li><strong>الموقع يهمّ:</strong> كل زوج من الستة يختلف بأكثر من 5 نقاط في سلسلة 180 يومًا.</li>
+  <li><strong>التاريخ يهمّ:</strong> على خمسة تواريخ متباعدة أسبوعًا، كل موقع يتحرّك — عبر الشمس حيث يمكن، وعبر وصلة الأرض دائمًا.</li>
+  <li><strong>المدة تهمّ، وهي متوسط لا مجموع:</strong> متوسط 90 يومًا يقع داخل نطاق النوافذ الثلاثية التي تغطّيه، و7 أيام تختلف عن 90 يومًا بأكثر من ضجيج التأرجح.</li>
+  <li><strong>نموذج السماء نفسه يتحرّك:</strong> متجه الشمس في إطار القمر يتحرّك أكثر من 5°/يوم، والأرض أكثر من 2°/أسبوع، ودوران الأرض يتقدّم.</li>
+  <li><strong>الحالة المقيسة:</strong> نافذة مضيئة تمامًا يمكن أن تُعادل بين موقعين (شاكلتون 98.60٪ ودي جيرلاش 98.62٪)، ويُثبَّت أن الواجهة تصرّح بذلك بدل أن تُخفيه.</li>
+</ul>
+
+<h3><code>tests/design.test.js</code> — اختبار واحد مضاف</h3>
+<p>لا سلسلة واجهة تنتهي بترقيم مزدوج أو بفاصلة — الحارس الذي كان غائبًا حين ظهر «part.,» على الشاشة.</p>
+
+<h2>القيود التي تبقى مكتوبة، لا مُخفَّفة</h2>
+<ul>
+  <li><strong>الحيد الواصل حدّ أعلى</strong> بسبب تنعيم التضاريس، وفجوته أمام أدقّ مرجع منشور نحو 22 نقطة مئوية — ومكتوبة بهذا الوضوح.</li>
+  <li><strong>«الأرض مرئية» ليست وصلة راديو مضمونة</strong> — لا نمط هوائي ولا ميزانية وصلة ولا تشويش.</li>
+  <li><strong>«الإضاءة» ليست طاقة كهربائية متاحة</strong> — لا نموذج حراري ولا غبار ولا توجيه؛ والبطارية والطاقة تقديرات مبنية على افتراضات مبسّطة.</li>
+  <li><strong>المشهد المداري مضغوط بصريًّا</strong> في وضع «Framed»، والحجم الحقيقي متاح في وضع True scale مع شارة صريحة.</li>
+  <li><strong>لا ادّعاء امتثال 100٪.</strong> الجدول يقول «داخل النطاق المنشور»، والنصّ يقول صراحة إن ذلك معايرة على إحصاءات منشورة، لا شهادة استقلالية.</li>
+</ul>
+
+<footer>
+  <p>
+    لتكرار كل ما ورد: <code>node scripts/horizon-audit.mjs</code> (يكتب
+    <code>tests/fixtures/horizon-audit.json</code> في ~29 ث). هذا الملف الرئيسي
+    (4.6 م.ب) غير مضمَّن في الأرشيف حفاظًا على حدّ 5 م.ب، فالسكربت يعمل تلقائيًّا
+    في وضع «المشحون» على <code>public/data/lola/sp-800m.binz</code> (800 و1600 م)
+    ويعلن ذلك في سطره الأول، دون أن يمسّ ملف القياس المحفوظ، <code>npm run validate</code>،
+    <code>npm test</code>، <code>npm run test:browser</code>.
+    التوثيق الكامل في <code>SOURCES-AND-LIMITS.md</code> البنود 5د و5هـ، وسجل القيود في
+    <code>COMPLIANCE.md</code>.
+  </p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,444 @@
+{
+  "generatedBy": "scripts/horizon-audit.mjs",
+  "window": {
+    "days": 365,
+    "stepH": 6,
+    "epochMs": 1767434580000,
+    "bins": 720
+  },
+  "note": "Masks recomputed from the shipped 400 m cap grid with the shipped terrain.js. They are NOT the masks the app uses: horizons.json was built offline from the native 80 m grid by a generator that is not in this repository.",
+  "base": "assets-src/lola/sp-400m.bin (full)",
+  "grids": [
+    "400 m",
+    "800 m",
+    "1600 m"
+  ],
+  "sites": [
+    {
+      "id": "shackleton",
+      "name": "Shackleton Rim",
+      "published": 84,
+      "shippedMask": {
+        "min": -2.9,
+        "max": 1.2
+      },
+      "shipped": {
+        "sunAnyPct": 82.88843258042436,
+        "sunPct": 76.83464750146511,
+        "earthAnyPct": 57.973990417522245,
+        "earthPct": 53.23254006416422
+      },
+      "recomputed": [
+        {
+          "grid": "400 m",
+          "mask": {
+            "min": -2.3281311988830566,
+            "max": 10.462019920349121
+          },
+          "vsShipped": {
+            "meanAbsDeg": 5.099996108986546,
+            "maxAbsDeg": 12.262019920349122
+          },
+          "sunAnyPct": 30.595482546201232,
+          "sunPct": 27.78715623727553,
+          "earthAnyPct": 0.2053388090349076,
+          "earthPct": 0.031113013066986606
+        },
+        {
+          "grid": "800 m",
+          "mask": {
+            "min": -2.1426453590393066,
+            "max": 12.552437782287598
+          },
+          "vsShipped": {
+            "meanAbsDeg": 4.449124343771774,
+            "maxAbsDeg": 13.181034088134766
+          },
+          "sunAnyPct": 30.663928815879533,
+          "sunPct": 27.686506338400534,
+          "earthAnyPct": 11.36208076659822,
+          "earthPct": 2.9118666673833213
+        },
+        {
+          "grid": "1600 m",
+          "mask": {
+            "min": -1.8505843877792358,
+            "max": 12.694828987121582
+          },
+          "vsShipped": {
+            "meanAbsDeg": 4.397410490748527,
+            "maxAbsDeg": 13.011871337890625
+          },
+          "sunAnyPct": 26.76249144421629,
+          "sunPct": 23.315400750860167,
+          "earthAnyPct": 0,
+          "earthPct": 0
+        }
+      ],
+      "bestPositionMatch": {
+        "dLatDeg": 0,
+        "dLonDeg": -1.2,
+        "groundKm": 0.45,
+        "meanAbsDeg": 0.16,
+        "unshiftedMeanAbsDeg": 5.1
+      },
+      "resolutionSpreadPp": 3.901437371663242,
+      "shippedVsRecomputedPp": 52.29295003422313
+    },
+    {
+      "id": "connecting-ridge",
+      "name": "Connecting Ridge",
+      "published": 89,
+      "shippedMask": {
+        "min": -2.9,
+        "max": -0.6
+      },
+      "shipped": {
+        "sunAnyPct": 98.42573579739904,
+        "sunPct": 95.04831907846885,
+        "earthAnyPct": 62.76522929500342,
+        "earthPct": 57.72146966869859
+      },
+      "recomputed": [
+        {
+          "grid": "400 m",
+          "mask": {
+            "min": -3.9158570766448975,
+            "max": 1.0576237440109253
+          },
+          "vsShipped": {
+            "meanAbsDeg": 1.1557325645932943,
+            "maxAbsDeg": 3.6576237440109254
+          },
+          "sunAnyPct": 77.96030116358658,
+          "sunPct": 74.73212295579087,
+          "earthAnyPct": 48.39151266255989,
+          "earthPct": 44.00848311357488
+        },
+        {
+          "grid": "800 m",
+          "mask": {
+            "min": -3.8802614212036133,
+            "max": 2.337455987930298
+          },
+          "vsShipped": {
+            "meanAbsDeg": 1.3899588776537652,
+            "maxAbsDeg": 4.5093621730804445
+          },
+          "sunAnyPct": 72.14236824093086,
+          "sunPct": 68.04418576243499,
+          "earthAnyPct": 47.84394250513347,
+          "earthPct": 43.299345592866956
+        },
+        {
+          "grid": "1600 m",
+          "mask": {
+            "min": -3.6758275032043457,
+            "max": 2.789517879486084
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.895427057582157,
+            "maxAbsDeg": 4.289517879486084
+          },
+          "sunAnyPct": 84.25735797399042,
+          "sunPct": 80.31991312695507,
+          "earthAnyPct": 49.007529089664615,
+          "earthPct": 44.24104054433588
+        }
+      ],
+      "bestPositionMatch": {
+        "dLatDeg": 0,
+        "dLonDeg": 0.8,
+        "groundKm": 0.87,
+        "meanAbsDeg": 0.46,
+        "unshiftedMeanAbsDeg": 1.16
+      },
+      "resolutionSpreadPp": 12.11498973305956,
+      "shippedVsRecomputedPp": 20.465434633812464
+    },
+    {
+      "id": "de-gerlache",
+      "name": "de Gerlache Rim",
+      "published": 85,
+      "shippedMask": {
+        "min": -3.6,
+        "max": -0.2
+      },
+      "shipped": {
+        "sunAnyPct": 82.95687885010267,
+        "sunPct": 80.09620960273452,
+        "earthAnyPct": 59.069130732375086,
+        "earthPct": 54.54409685939172
+      },
+      "recomputed": [
+        {
+          "grid": "400 m",
+          "mask": {
+            "min": -3.695580005645752,
+            "max": 1.9720146656036377
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.5518611904712292,
+            "maxAbsDeg": 3.478934383392334
+          },
+          "sunAnyPct": 75.7015742642026,
+          "sunPct": 72.88720730730313,
+          "earthAnyPct": 57.83709787816564,
+          "earthPct": 53.21715427006559
+        },
+        {
+          "grid": "800 m",
+          "mask": {
+            "min": -3.5652291774749756,
+            "max": 0.5915478467941284
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.4211317698029356,
+            "maxAbsDeg": 2.4832780003547668
+          },
+          "sunAnyPct": 79.73990417522245,
+          "sunPct": 76.7252362188373,
+          "earthAnyPct": 59.3429158110883,
+          "earthPct": 54.67325144440531
+        },
+        {
+          "grid": "1600 m",
+          "mask": {
+            "min": -3.4708945751190186,
+            "max": 4.475109577178955
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.6023658694637319,
+            "maxAbsDeg": 4.975109577178955
+          },
+          "sunAnyPct": 84.53114305270363,
+          "sunPct": 81.47647317502057,
+          "earthAnyPct": 56.53661875427789,
+          "earthPct": 51.87517074914118
+        }
+      ],
+      "bestPositionMatch": {
+        "dLatDeg": 0,
+        "dLonDeg": 0.4,
+        "groundKm": 1.03,
+        "meanAbsDeg": 0.47,
+        "unshiftedMeanAbsDeg": 0.55
+      },
+      "resolutionSpreadPp": 8.829568788501021,
+      "shippedVsRecomputedPp": 7.255304585900063
+    },
+    {
+      "id": "malapert",
+      "name": "Malapert Massif",
+      "published": 74,
+      "shippedMask": {
+        "min": -5,
+        "max": 3
+      },
+      "shipped": {
+        "sunAnyPct": 61.464750171115675,
+        "sunPct": 59.484084442331735,
+        "earthAnyPct": 100,
+        "earthPct": 99.67832493266091
+      },
+      "recomputed": [
+        {
+          "grid": "400 m",
+          "mask": {
+            "min": -4.365201473236084,
+            "max": 7.146271705627441
+          },
+          "vsShipped": {
+            "meanAbsDeg": 2.7053758382354856,
+            "maxAbsDeg": 7.9653655052185055
+          },
+          "sunAnyPct": 40.38329911019849,
+          "sunPct": 38.962550080019625,
+          "earthAnyPct": 100,
+          "earthPct": 99.99832159093634
+        },
+        {
+          "grid": "800 m",
+          "mask": {
+            "min": -4.3578033447265625,
+            "max": 8.688733100891113
+          },
+          "vsShipped": {
+            "meanAbsDeg": 4.690895306451449,
+            "maxAbsDeg": 11.150930404663086
+          },
+          "sunAnyPct": 26.00958247775496,
+          "sunPct": 25.737994658292216,
+          "earthAnyPct": 100,
+          "earthPct": 99.99363658166072
+        },
+        {
+          "grid": "1600 m",
+          "mask": {
+            "min": -4.98089075088501,
+            "max": 4.709665775299072
+          },
+          "vsShipped": {
+            "meanAbsDeg": 2.15158208737208,
+            "maxAbsDeg": 8.309665775299072
+          },
+          "sunAnyPct": 41.95756331279945,
+          "sunPct": 40.21982394785239,
+          "earthAnyPct": 100,
+          "earthPct": 99.99266307173669
+        }
+      ],
+      "bestPositionMatch": {
+        "dLatDeg": 0,
+        "dLonDeg": -1.6,
+        "groundKm": 12.43,
+        "meanAbsDeg": 1.66,
+        "unshiftedMeanAbsDeg": 2.71
+      },
+      "resolutionSpreadPp": 15.94798083504449,
+      "shippedVsRecomputedPp": 21.081451060917182
+    },
+    {
+      "id": "nobile",
+      "name": "Nobile Rim 1",
+      "published": null,
+      "shippedMask": {
+        "min": -2.4,
+        "max": 7.9
+      },
+      "shipped": {
+        "sunAnyPct": 38.12457221081451,
+        "sunPct": 37.45498537350303,
+        "earthAnyPct": 38.809034907597535,
+        "earthPct": 33.950017209638474
+      },
+      "recomputed": [
+        {
+          "grid": "400 m",
+          "mask": {
+            "min": -2.3864338397979736,
+            "max": 7.906167507171631
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.04054087450132812,
+            "maxAbsDeg": 0.22204537391662615
+          },
+          "sunAnyPct": 38.19301848049281,
+          "sunPct": 37.40610639925633,
+          "earthAnyPct": 38.74058863791923,
+          "earthPct": 34.00591183487015
+        },
+        {
+          "grid": "800 m",
+          "mask": {
+            "min": -2.340355634689331,
+            "max": 7.918896198272705
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.09104820672461462,
+            "maxAbsDeg": 1.8322555541992187
+          },
+          "sunAnyPct": 37.64544832306639,
+          "sunPct": 36.7965890353374,
+          "earthAnyPct": 38.809034907597535,
+          "earthPct": 34.17303615449392
+        },
+        {
+          "grid": "1600 m",
+          "mask": {
+            "min": -2.1453938484191895,
+            "max": 7.935572624206543
+          },
+          "vsShipped": {
+            "meanAbsDeg": 0.16174643172939074,
+            "maxAbsDeg": 0.6489696502685547
+          },
+          "sunAnyPct": 37.782340862423,
+          "sunPct": 37.020453549558866,
+          "earthAnyPct": 39.28815879534565,
+          "earthPct": 34.64424417261447
+        }
+      ],
+      "bestPositionMatch": {
+        "dLatDeg": 0,
+        "dLonDeg": 0,
+        "groundKm": 0,
+        "meanAbsDeg": 0.04,
+        "unshiftedMeanAbsDeg": 0.04
+      },
+      "resolutionSpreadPp": 0.5475701574264207,
+      "shippedVsRecomputedPp": -0.06844626967829726
+    },
+    {
+      "id": "cabeus",
+      "name": "Cabeus B",
+      "published": null,
+      "shippedMask": {
+        "min": -1.3,
+        "max": 18.1
+      },
+      "shipped": {
+        "sunAnyPct": 39.83572895277207,
+        "sunPct": 39.3587974301222,
+        "earthAnyPct": 65.63997262149213,
+        "earthPct": 60.611744905389884
+      },
+      "recomputed": [
+        {
+          "grid": "400 m",
+          "mask": {
+            "min": -1.2394675016403198,
+            "max": 21.392353057861328
+          },
+          "vsShipped": {
+            "meanAbsDeg": 1.1592154395769134,
+            "maxAbsDeg": 9.223002243041993
+          },
+          "sunAnyPct": 38.945927446954144,
+          "sunPct": 38.5974658153298,
+          "earthAnyPct": 65.43463381245722,
+          "earthPct": 60.33695011794023
+        },
+        {
+          "grid": "800 m",
+          "mask": {
+            "min": -1.1982747316360474,
+            "max": 17.5557804107666
+          },
+          "vsShipped": {
+            "meanAbsDeg": 1.4099942913766597,
+            "maxAbsDeg": 7.156202030181884
+          },
+          "sunAnyPct": 39.97262149212868,
+          "sunPct": 39.50375092576269,
+          "earthAnyPct": 65.50308008213553,
+          "earthPct": 60.486681460250395
+        },
+        {
+          "grid": "1600 m",
+          "mask": {
+            "min": -1.1810263395309448,
+            "max": 16.680103302001953
+          },
+          "vsShipped": {
+            "meanAbsDeg": 1.4523429319582002,
+            "maxAbsDeg": 7.155555438995361
+          },
+          "sunAnyPct": 39.69883641341547,
+          "sunPct": 39.3112860573898,
+          "earthAnyPct": 65.09240246406571,
+          "earthPct": 60.0578234311402
+        }
+      ],
+      "bestPositionMatch": {
+        "dLatDeg": 0,
+        "dLonDeg": 0,
+        "groundKm": 0,
+        "meanAbsDeg": 1.16,
+        "unshiftedMeanAbsDeg": 1.16
+      },
+      "resolutionSpreadPp": 1.026694045174537,
+      "shippedVsRecomputedPp": 0.8898015058179283
+    }
+  ]
+}

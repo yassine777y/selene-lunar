@@ -1,0 +1,6 @@
+{
+  "source": "Yale Bright Star Catalogue / Hipparcos, via d3-celestial stars.6.json (mag <= 6.0)",
+  "count": 4200,
+  "format": "little-endian float32 x4: RA_deg (J2000), Dec_deg (J2000), Vmag, B-V",
+  "license": "Public scientific data (Hipparcos/BSC); d3-celestial is BSD-3-Clause"
+}
